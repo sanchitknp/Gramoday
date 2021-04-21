@@ -61,6 +61,6 @@ const createReport = AsyncHandler(async (req, res) => {
         })
         reportt.users.push(userID)
         const newReport = await reportt.save()
-        res.json({"status": success,"reportID" :newReport._id})
+        res.json({"status": "success","reportID" :newReport._id})
       }
     })
